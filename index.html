@@ -18,19 +18,8 @@
     <!-- todo header starts here  -->
     <header>
       <!-- ? nav starts here -->
-    </style>
-    <script>
-        function showContent(type) {
-            document.querySelector('.stay-container').style.display = type === 'stay' ? 'block' : 'none';
-            document.querySelector('.topSelling-container').style.display = type === 'experience' ? 'block' : 'none';
-        }
-        
-        document.addEventListener("DOMContentLoaded", function() {
-            showContent('experience');
-        });
-    </script>
-</head>
-<body>
+    
+    
     <nav class="navbar">
         <div class="logo">Logo</div>
         <div class="menu">
@@ -40,9 +29,6 @@
         </div>
         <div class="currency">en/ usd</div>
     </nav>
-    
-
-   
     <main>
       <div class="content topSelling-container">
         <p>Top Selling</p>
@@ -619,5 +605,18 @@
     <div class="copyRights">
       <p>All rights reserved@bonvoyage.co</p>
     </div>
+
+    <!-- script for stay and explore switch -->
+    <script>
+      function showContent(type) {
+          document.querySelector('.stay-container').style.display = type === 'stay' ? 'block' : 'none';
+          document.querySelector('.topSelling-container').style.display = type === 'experience' ? 'block' : 'none';
+      }
+      
+      document.addEventListener("DOMContentLoaded", function() {
+          showContent('experience');
+      });
+      console.log(getComputedStyle(document.querySelector('.menu span')).color);
+  </script>
   </body>
 </html>
