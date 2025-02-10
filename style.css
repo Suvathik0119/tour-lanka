@@ -265,16 +265,19 @@ nav ul li .btn-orange {
 /* ? category-container end here  */
 
 /* ? topSelling-container start here  */
-.topSelling-container {
+.topSelling-container,
+.stay-container{
   text-align: center;
 }
-.topSelling-container > p {
+.topSelling-container > p ,
+  .stay-container > p {
   color: var(--blue);
   text-align: center;
   font-size: 32px;
   font-weight: 700;
 }
-.topSelling-container > h1 {
+.topSelling-container > h1 ,
+.stay-container > h1 {
   color: var(--3rd, #14183e);
   text-align: center;
   font-size: 62px;
@@ -870,10 +873,12 @@ nav ul li .btn-orange {
   .category-cards-row {
     justify-content: center;
   }
-  .topSelling-container > p {
+  .topSelling-container > p ,
+  .stay-container > p {
     font-size: 25px;
   }
-  .topSelling-container > h1 {
+  .topSelling-container > h1 ,
+  .stay-container > h1 {
     font-size: 35px;
   }
   .row-cards {
@@ -1047,10 +1052,12 @@ nav ul li .btn-orange {
   .category-cards-row {
     justify-content: center;
   }
-  .topSelling-container > p {
+  .topSelling-container > p ,
+  .stay-container > p {
     font-size: 30px;
   }
-  .topSelling-container > h1 {
+  .topSelling-container > h1 ,
+  .stay-container > h1 {
     font-size: 47px;
   }
   .row-cards {
@@ -1209,4 +1216,11 @@ nav ul li .btn-orange {
   .discover-app > h2 {
     margin-left: 20px;
   }
+}
+
+
+/* our codes */
+
+.fa-solid{
+  color: rgb(255, 226, 4);
 }
