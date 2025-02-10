@@ -18,132 +18,32 @@
     <!-- todo header starts here  -->
     <header>
       <!-- ? nav starts here -->
-      <nav>
-        <div class="logo">
-          <a href="#">Tour Sri-lanka</a>
+    </style>
+    <script>
+        function showContent(type) {
+            document.querySelector('.stay-container').style.display = type === 'stay' ? 'block' : 'none';
+            document.querySelector('.topSelling-container').style.display = type === 'experience' ? 'block' : 'none';
+        }
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            showContent('experience');
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <div class="menu">
+       
+            <span onclick="showContent('experience')">Explore </span>
+            <span onclick="showContent('stay')">Stay</span>
         </div>
-        <div class="nav-list">
-          <ul>
-            <li>
-              <a href="http://" target="_blank" rel="noopener noreferrer"
-                >Desitnations</a
-              >
-            </li>
-            <li>
-              <a href="http://" target="_blank" rel="noopener noreferrer"
-                >Hotels</a
-              >
-            </li>
-            <li>
-              <a href="http://" target="_blank" rel="noopener noreferrer"
-                >Flights</a
-              >
-            </li>
-            <li>
-              <a href="http://" target="_blank" rel="noopener noreferrer"
-                >Bookings</a
-              >
-            </li>
-            <li>
-              <a
-                href="http://"
-                class="btn-orange"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Login</a
-              >
-            </li>
-            <li>
-              <a
-                href="http://"
-                class="btn-orange"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Sign up</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- ? text box -->
-      <div class="text-box">
-        <h1>Travel,enjoy and live a new and full life</h1>
-        <h2>best destinations around the world</h2>
-        <button type="submit">Find out more</button>
-      </div>
-    </header>
-    <!-- todo header ends here  -->
+        <div class="currency">en/ usd</div>
+    </nav>
+    
 
-    <!-- todo main starts here  -->
+   
     <main>
-      <!-- ? category container start -->
-      <!-- <div class="category-container">
-        <p>CATEGORY</p>
-        <h1>We offer Best Services</h1>
-        <div class="category-cards-row">
-          space
-          <div class="card-col">
-            <div class="content-card">
-              <img
-                src="./img/antenna.svg"
-                width="107.902px"
-                height="97.762px"
-                alt="antenna-image"
-                srcset=""
-              />
-              <h2>Calculated Weather</h2>
-              <p>As much of information possible with the weather</p>
-            </div>
-          </div>
-          space 
-          <div class="card-col">
-            <div class="content-card radious-card">
-              <span class="back-image left-img">
-                <img class="plane" src="./img/airplane.svg" alt="" srcset="" />
-              </span>
-              <h2>Best Flights</h2>
-              <p>Getting cheap best flights</p>
-            </div>
-            <div class="boder-orange"></div>
-          </div>
-          space 
-          <div class="card-col">
-            <div class="content-card radious-card">
-              <span class="back-image right-img">
-                <img
-                  src="./img/image 25.png"
-                  width="46.914px"
-                  height="86.48px"
-                  alt="#"
-                  srcset=""
-                />
-              </span>
-              <h2>Local Events</h2>
-              <p>Getting good iternary based on the events</p>
-            </div>
-            <div class="boder-blue"></div>
-          </div>
-          space 
-          <div class="card-col">
-            <div class="content-card">
-              <img
-                src="./img/settings.svg"
-                width="84.642px"
-                height="86px"
-                alt="setting-sv"
-                srcset=""
-              />
-              <h2>Customization</h2>
-              <p>We deliver outsoureced services for customers</p>
-            </div>
-          </div>
-          <div class="orange-color"></div>
-          <div class="blue-color"></div>
-        </div>
-      </div> -->
-      <!-- ? category container end -->
-
-      <!-- ? top selling container start -->
       <div class="content topSelling-container">
         <p>Top Selling</p>
         <h1>Valuable Packages</h1>
@@ -307,8 +207,22 @@
       
       <!-- ? top selling container start -->
       <div class="content stay-container">
-        <p>Top Selling</p>
-        <h1>Valuable Packages</h1>
+        <div class="search-bar">
+          <input type="text" placeholder="where">
+          <input type="text" placeholder="check in">
+          <input type="text" placeholder="checkout">
+          <input type="text" placeholder="who">
+          <div class="search-button"></div>
+      </div>
+      <div class="icons">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+        <p>Top Stay</p>
+        <h1>Best stay area</h1>
         <div class="row-cards">
           <!-- space  -->
           <div class="card-colom">
