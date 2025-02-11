@@ -1410,9 +1410,53 @@ header {
 
 .see-more-btn {
     display: none;
-    padding: 10px;
-    background: blue;
-    color: white;
-    border: none;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: transparent;
+    color: blue;
     cursor: pointer;
+    margin: 5rem auto 1rem;
+    border: 0.1rem solid blue;
+    border-radius: 25px;
+    transition: all 0.3s ease-in;
+    
+}
+
+.see-more-btn:hover,
+.see-more-btn:active{
+    color: white;
+    border-color: transparent;
+    background: blue;
+    box-shadow: 1px 1px 15px rgba(95, 100, 255, 0.721);
+}
+
+
+@media screen and (max-width: 1200px) {
+    .card-stay {
+        width: calc(33.33% - 2rem);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .card-stay {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-stay {
+        width: calc(100% - 2rem);
+    }
+
+    .place {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .stay-content, 
+    .dis-content {
+        font-size: 14px;
+    }
 }
