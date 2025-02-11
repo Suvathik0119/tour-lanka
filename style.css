@@ -1261,3 +1261,22 @@ header {
 .fa-solid{
   color: rgb(255, 226, 4);
 }
+
+.icons i { 
+  cursor: pointer; 
+  margin: 10px; 
+  font-size: 24px; 
+}
+
+.card-stay { 
+  display: none; 
+}
+
+.see-more-btn { 
+  display: none; 
+  padding: 10px; 
+  background: blue; 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+}
