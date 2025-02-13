@@ -116,3 +116,52 @@
 .place-img-container img:hover{
      scale: 1.05;
 }
+
+/* meadia frame */
+
+@media screen and (max-width:1000px) {
+
+     .place-container{
+          margin: auto 1.5rem;
+     }
+
+     .package-img-frame{
+          height: 50vh;
+          gap: 10px;
+          margin: auto;
+     }
+
+     .right-frame .left-bottum-frame{
+          gap: 10px;
+     }
+
+     .package-head{
+          margin-top: -1.5rem;
+     }
+
+     .place-container{
+          flex-wrap: wrap;
+          margin: 2rem;
+     }
+
+     .place-img-container{
+          margin: auto;
+          order: -1;
+          width: 100%;
+     }
+
+     .place-img-container img{
+          width: 100%;
+          object-fit: cover;
+     }
+}
+
+@media screen and (max-width:1000px) {
+     .package-img-frame{
+          height: 30vh;
+     }
+     
+     .package-img-frame img{
+          border-radius: 5px;
+     }
+}
