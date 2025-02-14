@@ -1460,3 +1460,78 @@ header {
         font-size: 14px;
     }
 }
+
+
+
+
+
+
+
+
+/* Top Selling Container */
+.stay-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Icons Wrapper (Scrollable on Mobile) */
+  .icons-wrapper {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents items from wrapping */
+    padding: 10px 0;
+  }
+  
+  .icons {
+    display: inline-flex;
+    gap: 15px;
+    font-size: 24px;
+  }
+  
+  .icons i {
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .icons i:hover {
+    background: #007bff;
+    color: white;
+  }
+  
+  /* 🔹 Responsive: Make Icons Scrollable */
+  @media (max-width: 600px) {
+    .icons-wrapper {
+      overflow-x: auto;
+      display: flex;
+      padding: 10px;
+    }
+  
+    .icons {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  
+    .icons i {
+      font-size: 20px;
+      padding: 8px;
+      margin-right: 10px;
+    }
+  }
+  
