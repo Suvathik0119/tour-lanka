@@ -1,0 +1,118 @@
+.logo .fa-solid {
+     color: #333;
+}
+
+.package-img-frame{
+     width: 100%;
+     padding: 1rem 3rem;
+     display: flex;
+     gap: 1rem;
+     height: 80vh;
+}
+
+.left-frame,
+.center-frame,
+.right-frame{
+     width: 33%;
+}
+
+.left-frame img,
+.center-frame img,
+.right-frame img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 15px;
+     box-shadow: -1px 2.5px 10px rgba(0, 0, 0, 0.237);
+}
+
+.left-frame img,
+.center-frame img,
+.right-frame img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 15px;
+}
+
+.center-frame img{
+     height: 49%;
+}
+
+.right-frame .let-top-img{
+     height: 49%;
+}
+
+.right-frame .left-bottum-frame{
+     display: flex;
+     width: 100%;
+     gap: 1rem;
+     height: 49%;
+}
+
+.right-frame .left-bottum-frame img{
+     width: 48%;
+}
+
+
+/* css for main content */
+.package-content{
+     width: 100%;
+     margin: 3rem auto;
+     padding: 1rem 3rem;
+}
+
+.package-content .package-head{
+     text-align: center;
+     font-size: 2.8rem;
+     font-weight: 800;
+     margin-bottom: 1rem;
+     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.496);
+}
+
+.package-content .package-discription{
+     text-align: justify;
+     font-size: 1.1rem;
+     font-weight: thin;
+}
+
+
+/* place frame  */
+.place-container{
+     margin: 2rem 3rem;
+     display: flex;
+     gap: 2rem;
+}
+
+.place-text-container{
+     margin: auto;
+     width: calc(50%-1rem);
+}
+
+.place-name{
+     font-size: 2.2rem;
+     font-weight: 600;
+}
+
+.place-discription{
+     font-size: 1rem;
+     font-weight: lighter;
+     text-align: justify;
+}
+
+.place-img-container{
+     width: calc(50%-1rem);
+     height: 300px;
+}
+
+.place-img-container img{
+     width: fit-content;
+     height: 100%;
+     border-radius: 25px;
+     box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.496);
+     transition: all 0.5s ease-in;
+}
+
+.place-img-container img:hover{
+     scale: 1.05;
+}

@@ -1,116 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel landing page</title>
-    <!-- ! link CSS -->
+    <title>Hotel</title>
+    <link rel="stylesheet" href="/pstyle.css" />
     <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/assets/page/hotel.css" />
+    <link rel="stylesheet" href="hotel.css" />
 
     <!-- link for fontawsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
 
-<body>
-
+    
     <nav class="navbar">
-        <div class="logo">Logo</div>
+      <div
+        onclick="window.location.href='/index.html';"
+        style="cursor: pointer"
+        class="logo"
+      >
+        <i class="fa-solid fa-chevron-left"></i> back
+      </div>
+        <!-- <div class="logo">Logo</div> -->
         <div class="menu">
-            <span onclick="showContent('experience')">Explore </span>
-            <span onclick="showContent('stay')">Stay</span>
+       
+            <!-- <span onclick="showContent('experience')">Explore </span> -->
+            <span onclick="showContent('stay')"><h1>Stay</h1></span>
         </div>
         <div class="currency">en/ usd</div>
     </nav>
+
+
     <main>
-        <div class="search-bar">
-            <input type="text" placeholder="where" />
-            <input type="text" placeholder="check in" />
-            <input type="text" placeholder="checkout" />
-            <input type="text" placeholder="who" />
-            <div class="search-button"></div>
+      <!-- img full frame code-->
+      <div class="package-img-frame">
+        <div class="left-frame">
+          <img src="/img/sample-h (1).jpg" alt="" class="left-img" />
         </div>
+        <div class="center-frame">
+          <img src="/img/sample-h (2).jpg" alt="" class="center-top-img" />
+          <img src="/img/sample-h (3).jpg" alt="" class="center-bottum-img" />
+        </div>
+        <div class="right-frame">
+          <img src="/img/sample-h (7).jpg" alt="" class="let-top-img" />
+          <div class="left-bottum-frame">
+            <img src="/img/sample-h (5).jpg" alt="" class="buttom-left" />
+            <img src="/img/sample-h (6).jpg" alt="" class="buttom-right" />
+          </div>
+        </div>
+      </div>
 
-
-        <!-- image grids -->
-
-        <section>
-
-            <div class="card">
-                <div class="card__img">
-                    <img src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
-                        alt="Big Ben">
-                </div>
-            </div>
-
-
-            <div class="card">
-                <div class="card__img">
-                    <img src="https://images.unsplash.com/photo-1581010864468-c972b8705439?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                        alt="Eiffel Tower">
-                </div>
-            </div>
-
-
-            <div class="card">
-                <div class="card__img">
-                    <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1096&q=80"
-                        alt="Colosseum">
-                </div>
-            </div>
-
-
-            <div class="card">
-                <div class="card__img">
-                    <img src="https://images.unsplash.com/photo-1581473483413-313a5afffb08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80"
-                        alt="Pisa Tower">
-                </div>
-            </div>
-
-
-            <div class="card">
-                <div class="card__img">
-                    <img src="https://images.unsplash.com/photo-1585155967849-91c736589c84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
-                        alt="">
-                </div>
-            </div>
-
-
-            <div class="card">
-                <div class="card__img">
-                    <img src="https://images.unsplash.com/photo-1527915676329-fd5ec8a12d4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
-                        alt="Sydney Opera House">
-                </div>
-            </div>
-
-
-<!-- 
-
-
-            <div>
-                <div class="hotle_title">
-                    <h1>
-                        Hotel Name
-                    </h1>
-                </div>
-                <div>
-                    <h2>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ducimus cum asperiores
-                        exercitationem
-                        quas reprehenderit id dignissimos, autem ullam maiores explicabo? Quibusdam nostrum, magnam vero
-                        odio fugiat deserunt expedita ipsum saepe? Odio, harum minima. Qui optio vel quod laboriosam
-                        culpa.
-                    </h2>
-                </div>
-            </div> -->
-
-        </section>
+      <!-- code for main paragraph -->
+      <div class="package-content">
+        <p class="package-head">Hotel Name</p>
+        <p class="package-discription">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
+          deserunt amet vel sit, rem, numquam sequi animi laudantium, a esse
+          exercitationem? Consectetur ullam optio consequatur esse quis
+          assumenda vero culpa? Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Voluptatibus aliquam accusamus quaerat praesentium
+          illum nesciunt assumenda porro laborum? Aut, necessitatibus placeat
+          ipsa illum iure expedita quibusdam tempore incidunt consectetur velit?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem voluptatem dolorem sapiente repellendus, sunt nesciunt
+          explicabo culpa rem aliquam, nam, facere odit voluptate autem deserunt
+          veritatis blanditiis ex in illo!
+        </p>
+      </div>
+        </div>
+      </div>
+      <form class="booking-form">
+        <h2>Hotel Booking</h2>
+      
+        <!-- Guest Details -->
+        <div class="form-group">
+          <label for="guestName">Full Name</label>
+          <input type="text" class="form-control" id="guestName" placeholder="Enter your full name" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="guestEmail">Email</label>
+          <input type="email" class="form-control" id="guestEmail" placeholder="Enter your email" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="guestPhone">Phone Number</label>
+          <input type="tel" class="form-control" id="guestPhone" placeholder="Enter your phone number" required>
+        </div>
+      
+        <!-- Date Selection -->
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="checkInDate">Check-in Date</label>
+            <input type="date" class="form-control" id="checkInDate" required>
+          </div>
+      
+          <div class="form-group col-md-6">
+            <label for="checkOutDate">Check-out Date</label>
+            <input type="date" class="form-control" id="checkOutDate" required>
+          </div>
+        </div>
+      
+        <!-- Room Selection -->
+        <div class="form-group">
+          <label for="roomType">Room Type</label>
+          <select id="roomType" class="form-control" required>
+            <option value="" selected disabled>Select a room type</option>
+            <option value="single">Single Room</option>
+            <option value="double">Double Room</option>
+            <option value="suite">Suite</option>
+          </select>
+        </div>
+      
+        <!-- Extra Services -->
+        <div class="form-group">
+          <label>Additional Services</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="breakfast">
+            <label class="form-check-label" for="breakfast">Breakfast Included</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="airportPickup">
+            <label class="form-check-label" for="airportPickup">Airport Pickup</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="lateCheckout">
+            <label class="form-check-label" for="lateCheckout">Late Checkout</label>
+          </div>
+        </div>
+      
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Confirm Booking</button>
+      </form>
+      
     </main>
-
-
-
-
-</body>
-
+  </body>
 </html>
