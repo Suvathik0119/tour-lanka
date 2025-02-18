@@ -1,0 +1,87 @@
+/* Global Styles */
+.booking-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Form Row */
+  .form-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .form-group.col-md-6 {
+    flex: 1;
+  }
+  
+  /* Checkbox Styling */
+  .form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .form-check-input {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    width: 100%;
+    padding: 12px;
+    background: #eabe0d;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background: #ffcc00;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .form-group.col-md-6 {
+      width: 100%;
+    }
+  }
+  
